@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #6295A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 80vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 2.2rem;
+}
+.game-container{
+    height: 57vmin;
+    width: 54vmin;
+    border: 2px solid #240750;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.box{
+    height: 19vmin;
+    width: 18vmin;
+    border: 2px solid #240750;
+    background-color: #FDFFC2;
+    font-size: 5.5rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+.winner-popup{
+    height:30vmin;
+    width: 40vmin;
+    position: absolute;
+    background-color: rgba(240, 255, 252);
+    text-align: center;
+    padding-top: 3vmin;
+    border-radius: 20px;
+    font-size: 2.2rem;
+    color:#FFF455;
+    text-shadow: 1.5px 1.5px #f20909cf;
+}
+.hide{
+    display:none;
+}
+.new-btn,.reset-btn{
+    padding: .7em 1.4em;
+    margin-top: 2em;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reset-btn{
+    padding: 1rem 2.4rem;
+    border: 2px solid #240750;
+}
+
+/* Media queries */
+
+  @media only screen and (750px <= width <=850px) {
+    .winner-popup{
+        font-size: 2rem;
+    }
+    .new-btn{
+        font-size: 1.1rem;
+    }
+  }
+  @media only screen and (600px <= width <=750px) {
+    .game{
+        font-size: 2rem;
+    }
+    .box{
+        font-size: 4.5rem;
+    }
+    .new-btn,.reset-btn{
+        padding: .7em 1.2em;
+        font-size: 1rem;
+    }
+    .winner-popup{
+        font-size: 1.75rem;
+    }
+  }
+  @media only screen and (450px <= width <=600px) {
+    .game{
+        font-size: 1.6rem;
+    }
+    .box{
+        font-size: 3.6rem;
+    }
+    .new-btn,.reset-btn{
+        padding: .5em 1em;
+        font-size: .9rem;
+    }
+    .winner-popup{
+        font-size: 1.6rem;
+    }
+  }
+  @media only screen and (350px <= width <=450px) {
+    .game{
+        font-size: 1.2rem;
+    }
+    .box{
+        font-size: 2.5rem;
+    }
+    .new-btn,.reset-btn{
+        padding: .4em .8em;
+        font-size: .75rem;
+    }
+    .winner-popup{
+        font-size: 1rem;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .game{
+        font-size: .9rem;
+    }
+    .box{
+        font-size: 2rem;
+    }
+    .new-btn,.reset-btn{
+        padding: .3em .7em;
+        font-size: .65rem;
+    }
+    .winner-popup{
+        font-size: .9rem;
+    }
+  }
